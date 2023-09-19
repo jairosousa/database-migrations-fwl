@@ -1,0 +1,23 @@
+
+name: CI mysql-flyway-migrations-reusabled
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  call-workflow:
+    uses: jairosousa/reusable-migration-flow/.github/workflows/build&Deploy-migrations.yml@main
+    with:
+      url: jdbc:mysql://db4free.net:3306/banco73tes_db
+      username: jainaso73
+      password: admin123
