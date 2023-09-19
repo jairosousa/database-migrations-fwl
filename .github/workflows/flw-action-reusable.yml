@@ -25,5 +25,6 @@ jobs:
         uses: jairosousa/reusable-migration-flow@main
         with:
           url: jdbc:mysql://db4free.net:3306/banco73tes_db
-          username: jainaso73
-          password: admin123  
+          user: jainaso73
+          password: admin123
+          locations: ./migrations  
