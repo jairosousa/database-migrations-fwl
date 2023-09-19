@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: migration action step
         id: migration
-        uses: jairosousa/reusable-migration-flow/action.yml
+        uses: jairosousa/reusable-migration-flow@action.yml
         with:
           url: jdbc:mysql://db4free.net:3306/banco73tes_db
           username: jainaso73
