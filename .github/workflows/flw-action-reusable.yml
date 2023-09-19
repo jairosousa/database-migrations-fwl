@@ -26,5 +26,4 @@ jobs:
         with:
           url: jdbc:mysql://db4free.net:3306/banco73tes_db
           user: jainaso73
-          password: admin123
-          locations: . 
+          password: admin123 
