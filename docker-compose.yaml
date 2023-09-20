@@ -1,0 +1,12 @@
+version: '3'
+services:
+  flyway:
+    image: flyway/flyway:9
+    environment:
+      FLYWAY_URL: jdbc:mysql://db4free.net:3306/banco73tes_db
+      FLYWAY_USER: jainaso73
+      FLYWAY_PASSWORD: admin123
+      FLYWAY_LOCATIONS: filesystem:/flyway/sql
+    volumes:
+      - E:\workspace\migrations\migrations:/flyway/sql
+    command: -connectRetries=30 migrate

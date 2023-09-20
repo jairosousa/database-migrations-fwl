@@ -4,8 +4,18 @@
 
 # Database Migrations action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+Este repositorio teste para execução action que builda migrations usando o **Flyway**.
 
+# Tecnologias
+
+# <img alt="Git Action" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/>
+
+# <img alt="Flyway" src="https://img.shields.io/badge/Flyway-up?style=for-the-badge&logo=flyway&logoColor=%23FFFFF&labelColor=%23CC0200&color=%23CC0200" />
+
+# <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" />
+# <img alt="mysql" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
+
+# Variáveis
 ## Inputs
 
 ## `locations`
@@ -25,7 +35,7 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 The time we greeted you.
 
-## Example usage
+# Example usage
 
 ```yaml
 call-workflow:
@@ -36,6 +46,9 @@ call-workflow:
       password: ${{secrets.PASSWORD}}
 ```
 
+# Rodando localmente
+
+- Utilizar o docker compose
 ## Referências
 
 * [Criando uma ação de contêiner do Docker](https://docs.github.com/pt/actions/creating-actions/creating-a-docker-container-action)
